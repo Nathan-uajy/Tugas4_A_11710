@@ -49,11 +49,11 @@ uploaded_file = st.sidebar.file_uploader("Upload your input CSV file", type=["cs
 
 if uploaded_file is not None:
     input_data = pd.read_csv(uploaded_file)
-    st.markdown("<h1 style='text-align: center;'>Unsupervised Learning - YYYYY</h1>", unsafe_allow_html=True) #YYYYY diisi dengan nama panggilan
+    st.markdown("<h1 style='text-align: center;'>Unsupervised Learning - 11710</h1>", unsafe_allow_html=True)
     st.dataframe(input_data)
     
     #direktori tempat penyimpanan ketiga model yang telah di dump sebelumnya
-    model_directory = r"C:\Users\Lenovo\Downloads\Unsupervised Learning (Praktek)\Unsupervised Learning (Praktek)\Tugas4_A_11710\credit_card.csv"
+    model_directory = r"C:\Users\Lenovo\Downloads\Unsupervised Learning (Praktek)\Unsupervised Learning (Praktek)\Tugas4_A_11710"
     model_path = {
         'AGG_model' : os.path.join(model_directory, r'AGG_model.pkl'),
         'KMeans_model' : os.path.join(model_directory, r'KMeans_model.pkl'),
