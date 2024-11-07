@@ -39,7 +39,7 @@ def scatter(model, model_name, data, new_point, features, color_scale, title):
     return fig, new_cluster
 
 st.set_page_config(
-    page_title="XXXXX - Unsupervised Learning", #XXXXX diisi dengan 5 digit NPM
+    page_title="11710 - Unsupervised Learning",
     page_icon="📊",
     layout='wide',
     initial_sidebar_state="expanded",
@@ -49,10 +49,9 @@ uploaded_file = st.sidebar.file_uploader("Upload your input CSV file", type=["cs
 
 if uploaded_file is not None:
     input_data = pd.read_csv(uploaded_file)
-    st.markdown("<h1 style='text-align: center;'>Unsupervised Learning - 11710</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;'>Unsupervised Learning - Nathan</h1>", unsafe_allow_html=True)
     st.dataframe(input_data)
     
-    #direktori tempat penyimpanan ketiga model yang telah di dump sebelumnya
     model_directory = r"C:\Users\Lenovo\Downloads\Unsupervised Learning (Praktek)\Unsupervised Learning (Praktek)\Tugas4_A_11710"
     model_path = {
         'AGG_model' : os.path.join(model_directory, r'AGG_model.pkl'),
